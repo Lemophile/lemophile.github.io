@@ -2,7 +2,7 @@
   "name": "personal-website",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://lemophile.github.io/piwi.github.io",
+  "homepage": "https://lemophile.github.io",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
