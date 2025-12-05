@@ -4,6 +4,12 @@ on:
   push:
     branches: [ main ]
 
+# Permissions pour le déploiement sur GitHub Pages
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -31,7 +37,7 @@ jobs:
         with:
           folder: out
           branch: gh-pages
-          # PERSONAL_ACCESS_TOKEN est un secret GitHub configuré dans les settings du dépôt
-          token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+          # Utilisation du token GitHub par défaut avec permissions de déploiement
+          token: ${{ secrets.GITHUB_TOKEN }}
           clean: true
           repository-name: Lemophile/lemophile.github.io
