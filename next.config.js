@@ -3,8 +3,8 @@ const isProd = process.env.NODE_ENV === 'production';
 
 const nextConfig = {
   output: 'export',
-  basePath: '/piwi',
-  assetPrefix: '/piwi/',
+  basePath: '',
+  assetPrefix: '',
   images: {
     unoptimized: true,
   },
